@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: site-1000pages
+    ports:
+      - "8088:80"
+    restart: unless-stopped
